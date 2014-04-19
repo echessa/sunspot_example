@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag @product.photo.url(:medium) %>
+
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
