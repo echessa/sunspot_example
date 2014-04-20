@@ -34,6 +34,8 @@ end
 
 gem 'foundation-rails'
 gem "paperclip", "~> 4.1"
+gem 'pry'
+gem 'pry-nav'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
