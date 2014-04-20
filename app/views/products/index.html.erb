@@ -1,5 +1,21 @@
 <h3>Products</h3>
 
+<div class="row">
+<%= form_tag products_path, :method => :get do %>
+    <div class="large-6 columns">
+        <div class="row collapse">
+            <div class="small-10 columns">
+                <%= text_field_tag :search, params[:search] %>
+            </div>
+            <div class="small-2 columns">
+                <%= submit_tag "Search", :name => nil, :class => "button postfix" %>
+            </div>
+        </div>
+    </div>
+<% end %>
+</div>
+
+<div class="row">
 <% if @products.empty? %>
     <p>No products added to database</p>
 <% else %>
@@ -8,11 +24,11 @@
           <li>
             <div class="row">
               <h4><%= link_to product.name, product %></h4>
-              <p>product.price</p>
+              <p><%= number_to_currency(product.price) %></p>
             </div>
             <div class="row">
               <div class="small-3 columns"><%= image_tag product.photo.url(:thumb) %></div>
-              <div class="small-9 columns">product.description</div>
+              <div class="small-9 columns"><%= product.description %></div>
             </div>
           </li>
           <hr>
@@ -22,4 +38,5 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<%= link_to 'New Product', new_product_path, :class => 'button' %>
+</div>

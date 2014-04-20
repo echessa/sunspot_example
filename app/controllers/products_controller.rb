@@ -1,6 +1,3 @@
-require 'pry'
-require 'pry-nav'
-
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
