@@ -14,7 +14,7 @@ desc2 = 'This is a 20.1 MP Digital Camera with a 2.7 inch LCD. It can record 720
 desc3 = 'This is a 12.1 MP Digital Camera with 30x optical zoom and 1080p full HD video. It has built in Wi-Fi technology for on-the-go convenience when you want to share your photos and videos with friends, family and the whole world.'
 desc4 = 'This is an instant film camera. It automatically detects the brightness of the surrounding and adjusts the amount of flash and shutter speed to optimize photo quality. It has kids mode suitable for photographing kids, pets and other fast moving subjects due to a fast shutter speed.'
 
-Product.create! :name => 'Panasonic LUMIX DMC-FZ70', :price => 300.00, :description => desc1, :photo => photo
+Product.create! :name => 'Panasonic LUMIX DMC-FZ70', :price => 320.00, :description => desc1, :photo => photo
 Product.create! :name => 'Sony DSC W830/B', :price => 140.00, :description => desc2, :photo => photo
 Product.create! :name => 'Canon PowerShot SX510 HS', :price => 230.00, :description => desc3, :photo => photo
 Product.create! :name => 'Fujifilm Instax Mini 90 Neo Classic Instant Film Camera', :price => 150.00, :description => desc4, :photo => photo
