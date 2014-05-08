@@ -1,28 +1,11 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run the application, you'll need to include a database.yml file in the config directory
 
-Things you may want to cover:
+I have included a template named database.example.yml
 
-* Ruby version
+Use it as a guide and change the settings according to your environment and be sure to save the file as database.yml
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+(If you're using sqlite3, just drop the .example and use as is)
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
